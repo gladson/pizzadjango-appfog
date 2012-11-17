@@ -1,6 +1,0 @@
-django==1.4.1
-mysql-python
-PIL
-South
-git+git://github.com/dyve/django-bootstrap-toolkit.git#egg=bootstrap-toolkit
-easy-thumbnails
