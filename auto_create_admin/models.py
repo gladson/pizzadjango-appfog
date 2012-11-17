@@ -10,15 +10,15 @@ signals.post_syncdb.disconnect(
     sender=auth_models,
     dispatch_uid='django.contrib.auth.management.create_superuser')
 
-def create_gladson(app, created_models, verbosity, **kwargs):
+def create_admin(app, created_models, verbosity, **kwargs):
   if not settings.DEBUG:
     return
   try:
-    auth_models.User.objects.get(username='gladson')
+    auth_models.User.objects.get(username='admin')
   except auth_models.User.DoesNotExist:
-    assert auth_models.User.objects.create_superuser('gladson', 'gladsonbrito@gmail.com', 'gladson')
+    assert auth_models.User.objects.create_superuser('admin', 'admin@gmail.com', 'admin')
   else:
-    print 'Gladson, já existe.'
+    print 'Admin, já existe.'
 
-signals.post_syncdb.connect(create_gladson,
-    sender=auth_models, dispatch_uid='common.models.create_gladson')
+signals.post_syncdb.connect(create_admin,
+    sender=auth_models, dispatch_uid='common.models.create_admin')
