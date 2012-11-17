@@ -5,6 +5,12 @@ Projeto de uma app sendo criada ao vivo
 
 pizzadjango - appfog
 ====================
+####Login: admin
+####Senha: admin
+
+pizzadjango - appfog - Instalação
+=================================
+
 <blockquote>
 <p>
 $ af push pizza --url pizza.rs.af.cm
