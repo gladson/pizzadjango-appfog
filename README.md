@@ -13,7 +13,7 @@ pizzadjango - appfog - Instalação
 
 <blockquote>
 <p>
-$ af push pizza --url pizza.rs.af.cm
+$ af push pizza --url pizza.hp.af.cm
 </p>
 <p>
 Would you like to deploy from the current directory? [Yn]: y
